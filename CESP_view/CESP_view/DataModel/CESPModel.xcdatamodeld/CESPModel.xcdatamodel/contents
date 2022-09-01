@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D49" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CESP" representedClassName="CESP" syncable="YES" codeGenerationType="class">
+        <attribute name="endereco_cesp" optional="YES" attributeType="String"/>
+        <attribute name="hf_cesp" optional="YES" attributeType="String"/>
+        <attribute name="hf_feriado_fds_cesp" optional="YES" attributeType="String"/>
+        <attribute name="id_cesp" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nome_cesp" optional="YES" attributeType="String" defaultValueString="Nome (Default)"/>
+        <attribute name="telefone_cesp" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Estrutura_CESP" representedClassName="Estrutura_CESP" syncable="YES" codeGenerationType="class">
+        <attribute name="id_cesp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id_estrutura" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nome_estrutura" optional="YES" attributeType="String" defaultValueString="Nome (Default)"/>
+        <attribute name="qtd_estrutura" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Modalidade_CESP" representedClassName="Modalidade_CESP" syncable="YES" codeGenerationType="class">
+        <attribute name="id_cesp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id_modalidade" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nome_modalidade" optional="YES" attributeType="String" defaultValueString="Nome (Default)"/>
+    </entity>
+    <elements>
+        <element name="CESP" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Estrutura_CESP" positionX="-54" positionY="36" width="128" height="89"/>
+        <element name="Modalidade_CESP" positionX="-36" positionY="54" width="128" height="74"/>
+    </elements>
+</model>
