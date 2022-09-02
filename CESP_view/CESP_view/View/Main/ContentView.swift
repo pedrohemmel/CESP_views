@@ -25,6 +25,7 @@ struct ContentView: View {
                     ForEach(centrosESP) { centroESP in
                         NavigationLink(
                             destination: infoCespView(
+                            id_cesp: .constant(centroESP.id_cesp ?? UUID()),
                             nome_cesp: .constant(centroESP.nome_cesp ?? ""),
                             endereco_cesp: .constant(centroESP.endereco_cesp ?? ""),
                             telefone_cesp: .constant(centroESP.telefone_cesp ?? ""),

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		160EAFE428C132FD00CA4732 /* Estrutura_CESPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EAFE328C132FD00CA4732 /* Estrutura_CESPController.swift */; };
 		160EAFE628C1391C00CA4732 /* infoCespView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EAFE528C1391C00CA4732 /* infoCespView.swift */; };
+		160EAFE828C27A7E00CA4732 /* estruturasCespView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EAFE728C27A7E00CA4732 /* estruturasCespView.swift */; };
+		160EAFEA28C27B3600CA4732 /* modalidadesCespView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EAFE928C27B3600CA4732 /* modalidadesCespView.swift */; };
+		160EAFF028C29E6700CA4732 /* addNewEstruturaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EAFEF28C29E6700CA4732 /* addNewEstruturaView.swift */; };
 		16838CF928BE8EF5005C319C /* CESP_viewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16838CF828BE8EF5005C319C /* CESP_viewApp.swift */; };
 		16838CFB28BE8EF5005C319C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16838CFA28BE8EF5005C319C /* ContentView.swift */; };
 		16838CFD28BE8EF7005C319C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16838CFC28BE8EF7005C319C /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		160EAFE328C132FD00CA4732 /* Estrutura_CESPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estrutura_CESPController.swift; sourceTree = "<group>"; };
 		160EAFE528C1391C00CA4732 /* infoCespView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCespView.swift; sourceTree = "<group>"; };
+		160EAFE728C27A7E00CA4732 /* estruturasCespView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estruturasCespView.swift; sourceTree = "<group>"; };
+		160EAFE928C27B3600CA4732 /* modalidadesCespView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modalidadesCespView.swift; sourceTree = "<group>"; };
+		160EAFEF28C29E6700CA4732 /* addNewEstruturaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewEstruturaView.swift; sourceTree = "<group>"; };
 		16838CF528BE8EF5005C319C /* CESP_view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CESP_view.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16838CF828BE8EF5005C319C /* CESP_viewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CESP_viewApp.swift; sourceTree = "<group>"; };
 		16838CFA28BE8EF5005C319C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +48,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160EAFEB28C29DF200CA4732 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				16838CFA28BE8EF5005C319C /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		160EAFEC28C29E0800CA4732 /* CE */ = {
+			isa = PBXGroup;
+			children = (
+				16838D0F28BEA11B005C319C /* addNewCespView.swift */,
+				160EAFE528C1391C00CA4732 /* infoCespView.swift */,
+				160EAFEE28C29E2E00CA4732 /* Modalidade */,
+				160EAFED28C29E2100CA4732 /* Estrutura */,
+			);
+			path = CE;
+			sourceTree = "<group>";
+		};
+		160EAFED28C29E2100CA4732 /* Estrutura */ = {
+			isa = PBXGroup;
+			children = (
+				160EAFE728C27A7E00CA4732 /* estruturasCespView.swift */,
+				160EAFEF28C29E6700CA4732 /* addNewEstruturaView.swift */,
+			);
+			path = Estrutura;
+			sourceTree = "<group>";
+		};
+		160EAFEE28C29E2E00CA4732 /* Modalidade */ = {
+			isa = PBXGroup;
+			children = (
+				160EAFE928C27B3600CA4732 /* modalidadesCespView.swift */,
+			);
+			path = Modalidade;
+			sourceTree = "<group>";
+		};
 		16838CEC28BE8EF4005C319C = {
 			isa = PBXGroup;
 			children = (
@@ -92,9 +134,8 @@
 		16838D0C28BEA068005C319C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				16838CFA28BE8EF5005C319C /* ContentView.swift */,
-				16838D0F28BEA11B005C319C /* addNewCespView.swift */,
-				160EAFE528C1391C00CA4732 /* infoCespView.swift */,
+				160EAFEB28C29DF200CA4732 /* Main */,
+				160EAFEC28C29E0800CA4732 /* CE */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,10 +228,13 @@
 				16838D1028BEA11B005C319C /* addNewCespView.swift in Sources */,
 				16838CFB28BE8EF5005C319C /* ContentView.swift in Sources */,
 				16838CF928BE8EF5005C319C /* CESP_viewApp.swift in Sources */,
+				160EAFEA28C27B3600CA4732 /* modalidadesCespView.swift in Sources */,
+				160EAFE828C27A7E00CA4732 /* estruturasCespView.swift in Sources */,
 				160EAFE628C1391C00CA4732 /* infoCespView.swift in Sources */,
 				16838D0B28BE9289005C319C /* CESPController.swift in Sources */,
 				160EAFE428C132FD00CA4732 /* Estrutura_CESPController.swift in Sources */,
 				16838D0928BE8F5D005C319C /* CESPModel.xcdatamodeld in Sources */,
+				160EAFF028C29E6700CA4732 /* addNewEstruturaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

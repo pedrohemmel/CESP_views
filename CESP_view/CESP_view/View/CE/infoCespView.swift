@@ -12,6 +12,7 @@ struct infoCespView: View {
     @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
     
+    @Binding var id_cesp : UUID
     @Binding var nome_cesp : String
     @Binding var endereco_cesp : String
     @Binding var telefone_cesp : String
@@ -26,7 +27,7 @@ struct infoCespView: View {
                 Text("Photo Here")
                 Spacer()
             }
-            .frame(width: .none, height: CGFloat(100), alignment: .center)
+            .frame(width: .none, height: CGFloat(200), alignment: .center)
             .background(Color.gray)
             
             //Modifying the name of the Centro Esportivo and the phone icon/map icon to the both stay on the same line
@@ -36,12 +37,16 @@ struct infoCespView: View {
                     .fontWeight(.bold)
                     .padding()
                 Spacer()
-                Image(systemName: "pencil")
-                    .resizable()
-                    .frame(width: CGFloat(20), height: CGFloat(20), alignment: .center)
-                    .padding()
+                
+                Button(action: {
                     
-//                Image(systemName: "")
+                }, label: {
+                    Image(systemName: "pencil")
+                        .resizable()
+                        .frame(width: CGFloat(25), height: CGFloat(25), alignment: .center)
+                        .padding()
+                })
+                .foregroundColor(.black)
             }
             
             
@@ -54,6 +59,17 @@ struct infoCespView: View {
             
             Text("Horário de Functionamento Feriado/Fim de semana: \(hf_fds_feriado_cesp)")
             
+            Spacer()
+            
+            NavigationLink(
+                destination:
+                    estruturasCespView(
+                        id_cesp: .constant(id_cesp),
+                        nome_cesp: .constant(nome_cesp)),
+                label: {
+                    Text("Visualizar Estruturas")
+                })
+            
         }
         .ignoresSafeArea()
     }
@@ -61,6 +77,6 @@ struct infoCespView: View {
 
 struct infoCespView_Previews: PreviewProvider {
     static var previews: some View {
-        infoCespView(nome_cesp: .constant(""), endereco_cesp: .constant(""), telefone_cesp: .constant(""), hf_cesp: .constant(""), hf_fds_feriado_cesp: .constant(""))
+        infoCespView(id_cesp: .constant(UUID()), nome_cesp: .constant(""), endereco_cesp: .constant(""), telefone_cesp: .constant(""), hf_cesp: .constant(""), hf_fds_feriado_cesp: .constant(""))
     }
 }
